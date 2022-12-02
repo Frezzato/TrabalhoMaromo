@@ -187,7 +187,7 @@ void procurar(p_conta pConta[], int tamanho){
 
         if(proc == pConta[i]->numero){
 
-            printf("Sua conta esta na %d posicao", i);
+            printf("Sua conta esta na %d posicao\n\n", i);
             achou = 1;
             break;
         }
@@ -195,8 +195,10 @@ void procurar(p_conta pConta[], int tamanho){
     }
 
     if(achou == 0){
+        system("cls||clear");
+        printf("Conta nao encontrada\n\n");
+        system("pause");
 
-        printf("Conta nao encontrada");
 
 
         int resp = 0;
@@ -475,6 +477,6 @@ void saldoGeral(p_conta pConta[], int tamanho){
 
     }
 
-    printf("O saldo de todas as contas somadas e: %.2lf", geral);
+    printf("O saldo de todas as contas somadas e: %.2lf\n\n", geral);
 
 }
